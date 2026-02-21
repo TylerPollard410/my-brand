@@ -1,0 +1,19 @@
+# currently a quarto project is required for metadata or brand extensions to work
+project:
+  type: default
+
+brand:
+  dark: _extensions/my-brand/brand-dark.yml
+  light: _extensions/my-brand/brand-light.yml
+
+format:
+  html:
+    theme: 
+      dark:
+        - default
+        - _extensions/my-brand/brand-dark.yml
+        - _extensions/my-brand/styles.scss
+      light:
+        - default
+        - _extensions/my-brand/brand-light.yml
+        - _extensions/my-brand/styles.scss
